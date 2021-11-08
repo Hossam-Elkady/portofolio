@@ -99,7 +99,7 @@ body {
 
     .custom-shape-divider-bottom-1635732704 {
         position: absolute;
-        bottom: 0px;
+        bottom: -2px;
         left: 0;
         width: 100%;
         overflow: hidden;
@@ -145,6 +145,7 @@ body {
 
     .max {
         margin-bottom: 60px;
+
     }
 
     @media screen and (max-width: 740px) {
@@ -163,7 +164,7 @@ body {
 
     .custom-shape-divider-bottom-1635779474 {
         position: absolute;
-        bottom: 0;
+        bottom: -2px;
         left: 0;
         width: 100%;
         overflow: hidden;
@@ -261,7 +262,7 @@ body {
 
     .custom-shape-divider-bottom-1635810468 {
         position: absolute;
-        bottom: 0;
+        bottom: -2px;
         left: 0;
         width: 100%;
         overflow: hidden;
@@ -374,7 +375,7 @@ body {
 
     .custom-shape-divider-bottom-1635820846 {
         position: absolute;
-        bottom: 0;
+        bottom: -2px;
         left: 0;
         width: 100%;
         overflow: hidden;
@@ -542,7 +543,8 @@ nav {
         -ms-border-radius: 5px;
         -o-border-radius: 5px;
     }
-    .active{
+
+    .active {
         background-color: var(--whity);
         padding: 10px 15px;
         border-radius: 5px;
