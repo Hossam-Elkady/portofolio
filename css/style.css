@@ -276,6 +276,11 @@ body {
   -o-border-radius: 5px;
 }
 
+#skills .icons svg {
+  width: 60px;
+  height: 60px;
+}
+
 #skills i {
   transition: 0.5s;
   -webkit-transition: 0.5s;
@@ -376,7 +381,7 @@ body {
   text-decoration: none;
 }
 
-#projects .btn::before {
+#projects .btn p::before {
   content: "";
   position: absolute;
   right: 100%;
@@ -391,7 +396,7 @@ body {
   -o-transition: 0.5s;
 }
 
-#projects .btn:hover::before {
+#projects .btn:hover p::before {
   right: 0px;
   left: 0px;
 }
@@ -586,7 +591,7 @@ footer .btn {
   -o-border-radius: 7px !important;
 }
 
-footer .btn::before {
+footer .btn h4::before {
   content: "";
   position: absolute;
   right: 100%;
@@ -601,7 +606,7 @@ footer .btn::before {
   -o-transition: 0.5s;
 }
 
-footer .btn:hover::before {
+footer .btn:hover h4::before {
   right: 0px;
 }
 

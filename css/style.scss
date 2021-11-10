@@ -260,6 +260,10 @@ body {
         -ms-border-radius: 5px;
         -o-border-radius: 5px;
     }
+    .icons svg{
+        width: 60px;
+        height: 60px;
+    }
 
     i {
         transition: 0.5s;
@@ -278,7 +282,7 @@ body {
     }
 
     .icons:hover i,
-    .icons:hover img {
+    .icons:hover img{
         transform: scale(2);
         -webkit-transform: scale(2);
         -moz-transform: scale(2);
@@ -360,7 +364,7 @@ body {
             text-decoration: none;
         }
     }
-    .btn::before {
+    .btn p::before {
         content: "";
         position: absolute;
         right: 100%;
@@ -375,7 +379,7 @@ body {
         -o-transition: 0.5s;
     }
 
-    .btn:hover::before {
+    .btn:hover p::before {
         right: 0px;
         left: 0px;
     }
@@ -551,7 +555,7 @@ footer {
         -o-border-radius: 7px !important;
     }
 
-    .btn::before {
+    .btn h4::before {
         content: "";
         position: absolute;
         right: 100%;
@@ -566,7 +570,7 @@ footer {
         -o-transition: 0.5s;
     }
 
-    .btn:hover::before {
+    .btn:hover h4::before {
         right: 0px;
     }
 }
