@@ -1,5 +1,7 @@
 $whity: #3470bd;
 $darky: #001135;
+// $btnWhity:rgba(255, 255, 255, 0.2);
+// $btndark:rgba(174, 216, 230,0.1);
 // var(--whity):#86C232;
 // var(--darky):#222629;
 // var(--darky):#562B29;
@@ -11,6 +13,13 @@ $darky: #001135;
 :root {
     --darky: #{$darky};
     --whity: #{$whity};
+    --btnWhity: rgba(255, 255, 255, 0.2);
+}
+
+.dark {
+    --darky: #{$whity};
+    --whity: #{$darky};
+    --btnWhity:rgba(174, 216, 230,0.1);
 }
 
 #mode {
@@ -22,11 +31,6 @@ $darky: #001135;
     -moz-transform: scaleX(-1);
     -ms-transform: scaleX(-1);
     -o-transform: scaleX(-1);
-}
-
-.dark {
-    --darky: #{$whity};
-    --whity: #{$darky};
 }
 
 body {
@@ -47,6 +51,7 @@ body {
     box-shadow: none;
 }
 
+// =======================================================================main=====================================================================
 #main {
     h1 span {
         color: white;
@@ -55,7 +60,41 @@ body {
 
     .btn {
         background-color: var(--whity);
+        text-shadow: 2px 2px 5px var(--whity);
+        position: relative;
+        transition: 0.5s;
+        overflow: hidden;
     }
+
+    .btn::before {
+        content: "";
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        left: 0px;
+        bottom: 0px;
+        background-color: var(--btnWhity);
+        transition: 0.5s;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -ms-transition: 0.5s;
+        -o-transition: 0.5s;
+        transform: rotate(180deg);
+        transform-origin: bottom left;
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+    }
+
+    .btn:hover::before {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }
+
 
     h4 {
         color: var(--darky);
@@ -145,7 +184,6 @@ body {
 
     .max {
         margin-bottom: 60px;
-
     }
 
     @media screen and (max-width: 740px) {
@@ -154,6 +192,8 @@ body {
         }
     }
 }
+
+// ===========================================================================about===========================================================================
 
 #about {
     background-color: var(--whity) !important;
@@ -184,6 +224,8 @@ body {
         fill: var(--darky);
     }
 }
+
+// ====================================================================skills===============================================================================
 
 #skills {
     .info {
@@ -282,6 +324,8 @@ body {
     }
 }
 
+// =============================================================================projects==================================================================
+
 #projects {
     background-color: var(--whity);
 
@@ -308,11 +352,32 @@ body {
 
     .btn {
         background-color: var(--darky);
+        position: relative;
+        overflow: hidden;
 
         a {
             color: white;
             text-decoration: none;
         }
+    }
+    .btn::before {
+        content: "";
+        position: absolute;
+        right: 100%;
+        left: 100%;
+        top: 0px;
+        bottom: 0px;
+        background-color: var(--btnWhity);
+        transition: 0.5s;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -ms-transition: 0.5s;
+        -o-transition: 0.5s;
+    }
+
+    .btn:hover::before {
+        right: 0px;
+        left: 0px;
     }
 
     .info {
@@ -417,7 +482,7 @@ body {
         }
     }
 }
-
+// ===============================================================footer=====================================================================
 footer {
     background-color: var(--darky);
     color: var(--whity);
@@ -476,12 +541,33 @@ footer {
 
     .btn {
         background-color: var(--whity) !important;
+        position: relative;
+        overflow: hidden;
         padding: 20px 30px;
         border-radius: 7px !important;
         -webkit-border-radius: 7px !important;
         -moz-border-radius: 7px !important;
         -ms-border-radius: 7px !important;
         -o-border-radius: 7px !important;
+    }
+
+    .btn::before {
+        content: "";
+        position: absolute;
+        right: 100%;
+        left: 0px;
+        top: 0px;
+        bottom: 0px;
+        background-color: var(--btnWhity);
+        transition: 0.5s;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -ms-transition: 0.5s;
+        -o-transition: 0.5s;
+    }
+
+    .btn:hover::before {
+        right: 0px;
     }
 }
 
