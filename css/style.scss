@@ -19,19 +19,9 @@ $darky: #001135;
 .dark {
     --darky: #{$whity};
     --whity: #{$darky};
-    --btnWhity:rgba(174, 216, 230,0.1);
+    --btnWhity: rgba(174, 216, 230, 0.1);
 }
 
-#mode {
-    width: 25px;
-    cursor: pointer;
-    padding-top: 8px;
-    transform: scaleX(-1);
-    -webkit-transform: scaleX(-1);
-    -moz-transform: scaleX(-1);
-    -ms-transform: scaleX(-1);
-    -o-transform: scaleX(-1);
-}
 
 body {
     overflow-x: hidden;
@@ -94,7 +84,6 @@ body {
         -ms-transform: rotate(0deg);
         -o-transform: rotate(0deg);
     }
-
 
     h4 {
         color: var(--darky);
@@ -260,7 +249,8 @@ body {
         -ms-border-radius: 5px;
         -o-border-radius: 5px;
     }
-    .icons svg{
+
+    .icons svg {
         width: 60px;
         height: 60px;
     }
@@ -282,7 +272,7 @@ body {
     }
 
     .icons:hover i,
-    .icons:hover img{
+    .icons:hover img {
         transform: scale(2);
         -webkit-transform: scale(2);
         -moz-transform: scale(2);
@@ -364,6 +354,7 @@ body {
             text-decoration: none;
         }
     }
+
     .btn p::before {
         content: "";
         position: absolute;
@@ -486,6 +477,7 @@ body {
         }
     }
 }
+
 // ===============================================================footer=====================================================================
 footer {
     background-color: var(--darky);
@@ -643,6 +635,14 @@ nav {
         -ms-border-radius: 5px;
         -o-border-radius: 5px;
     }
+
+    .fa-2x {
+        transition: 0.5s;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -ms-transition: 0.5s;
+        -o-transition: 0.5s;
+    }
 }
 
 .navScrolling {
@@ -659,6 +659,15 @@ nav {
         -moz-transition: all 0.5s;
         -ms-transition: all 0.5s;
         -o-transition: all 0.5s;
+    }
+
+    .fa-2x {
+        font-size: 20px !important;
+        transition: 0.5s;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -ms-transition: 0.5s;
+        -o-transition: 0.5s;
     }
 
     .nav-item a {
@@ -681,5 +690,37 @@ nav {
         -moz-transition: all 0.5s;
         -ms-transition: all 0.5s;
         -o-transition: all 0.5s;
+    }
+}
+
+.mode {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 45px;
+    height: 45px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    cursor: pointer;
+
+    .fa-moon {
+        background: -webkit-linear-gradient(#3470BD, #001135);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .fa-sun {
+        background: -webkit-linear-gradient(#FFE484, #FC9601);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 }

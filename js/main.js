@@ -28,8 +28,8 @@ let mode = document.getElementById("mode");
 mode.onclick = () => {
     document.body.classList.toggle("dark");
     if (document.body.classList.contains("dark")) {
-        mode.src="images/sun.png"
+        mode.innerHTML=`<i class="fas fa-2x fa-sun"></i>`
     } else {
-        mode.src="images/moon.png"
+        mode.innerHTML=`<i class="fas fa-2x fa-moon"></i>`
     }
 };
