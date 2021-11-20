@@ -1,13 +1,5 @@
 $whity: #3470bd;
 $darky: #001135;
-// $btnWhity:rgba(255, 255, 255, 0.2);
-// $btndark:rgba(174, 216, 230,0.1);
-// var(--whity):#86C232;
-// var(--darky):#222629;
-// var(--darky):#562B29;
-// var(--whity):#FF9531;
-// var(--whity):#4E3D53;
-// var(--darky):#A98B98;
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Shadows+Into+Light&family=Zilla+Slab&display=swap");
 
 :root {
@@ -41,7 +33,7 @@ body {
     box-shadow: none;
 }
 
-// =======================================================================main=====================================================================
+/* =======================================================================main=====================================================================*/
 #main {
     h1 span {
         color: white;
@@ -148,7 +140,6 @@ body {
     }
 
     .blob {
-        // background-image: url(../Images/blob.svg);
         background-size: cover;
         position: absolute;
         left: 0px;
@@ -182,7 +173,7 @@ body {
     }
 }
 
-// ===========================================================================about===========================================================================
+/*===========================================================================about===========================================================================*/
 
 #about {
     background-color: var(--whity) !important;
@@ -214,7 +205,7 @@ body {
     }
 }
 
-// ====================================================================skills===============================================================================
+/* ====================================================================skills===============================================================================*/
 
 #skills {
     .info {
@@ -318,14 +309,10 @@ body {
     }
 }
 
-// =============================================================================projects==================================================================
+/* =============================================================================projects==================================================================*/
 
 #projects {
     background-color: var(--whity);
-
-    // .project-card img {
-    //     height: 250px;
-    // }
 
     .project-card {
         width: 100%;
@@ -410,6 +397,7 @@ body {
         flex-direction: column;
         border-top-right-radius: 10px;
         border-top-left-radius: 10px;
+        cursor: pointer;
     }
 
     .hover:hover .overlay {
@@ -422,11 +410,11 @@ body {
 
     .overlay img {
         width: 60px;
+        padding-bottom: 15px;
     }
 
     .static img {
         width: 140px;
-        height: 70px;
     }
 
     .hover:hover .overlay img {
@@ -478,7 +466,7 @@ body {
     }
 }
 
-// ===============================================================footer=====================================================================
+/* ===============================================================footer=====================================================================*/
 footer {
     background-color: var(--darky);
     color: var(--whity);
@@ -547,7 +535,7 @@ footer {
         -o-border-radius: 7px !important;
     }
 
-    .btn h4::before {
+    .btn h5::before {
         content: "";
         position: absolute;
         right: 100%;
@@ -562,10 +550,12 @@ footer {
         -o-transition: 0.5s;
     }
 
-    .btn:hover h4::before {
+    .btn:hover h5::before {
         right: 0px;
     }
 }
+
+/* ===============================================================nav=====================================================================*/
 
 nav {
     position: sticky !important;
@@ -616,7 +606,6 @@ nav {
     }
 
     .nav-item:hover a {
-        // color: #88E0EF !important;
         background-color: var(--whity);
         padding: 10px 15px;
         border-radius: 5px;
@@ -644,6 +633,8 @@ nav {
         -o-transition: 0.5s;
     }
 }
+
+/* ===============================================================navScrolling=====================================================================*/
 
 .navScrolling {
     transition: all 0.5s;
@@ -691,6 +682,11 @@ nav {
         -ms-transition: all 0.5s;
         -o-transition: all 0.5s;
     }
+}
+
+img{
+    width: 100%;
+    height: auto;
 }
 
 .mode {
